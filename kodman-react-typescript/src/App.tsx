@@ -1,6 +1,7 @@
 import "./App.css";
 // import Card from './components/Card'
-import State from "./state/State";
+// import State from "./state/State";
+import Form from "./forms/Form";
 
 // const data = [
 //   {
@@ -16,7 +17,7 @@ import State from "./state/State";
 // ]
 
 function App() {
-  return <State />;
+  return <Form />;
 }
 
 export default App;
