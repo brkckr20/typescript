@@ -1,0 +1,11 @@
+{
+    "compilerOptions": {
+        "lib": ["ESNext","DOM"],
+        "strict": false, // tip desteği için
+        "module": "CommonJS",
+        "target": "ES3",
+        "esModuleInterop": false,
+        "outDir": "dist", //çıktı dosyası
+        "rootDir": "./" //çalışma dosyası
+    }
+}
