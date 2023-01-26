@@ -2,7 +2,8 @@ import "./App.css";
 // import Card from './components/Card'
 // import State from "./state/State";
 // import Form from "./forms/Form";
-import Test from "./formik/Test";
+// import Test from "./formik/Test";
+import Alistirma from "./state/Alistirma";
 
 // const data = [
 //   {
@@ -18,7 +19,7 @@ import Test from "./formik/Test";
 // ]
 
 function App() {
-  return <Test />;
+  return <Alistirma />;
 }
 
 export default App;
