@@ -3,7 +3,8 @@ import "./App.css";
 // import State from "./state/State";
 // import Form from "./forms/Form";
 // import Test from "./formik/Test";
-import Alistirma from "./state/Alistirma";
+// import Alistirma from "./state/Alistirma";
+import ApiSorgusu from "./useEffect-api-sorgusu";
 
 // const data = [
 //   {
@@ -19,7 +20,7 @@ import Alistirma from "./state/Alistirma";
 // ]
 
 function App() {
-  return <Alistirma />;
+  return <ApiSorgusu />;
 }
 
 export default App;
