@@ -1,0 +1,13 @@
+{
+    "compilerOptions": {
+        "lib": ["ESNext","DOM"],
+        "strict": false, // tip desteği için
+        "module": "CommonJS",
+        "target": "ES3",
+        "esModuleInterop": false,
+        "allowSyntheticDefaultImports": true,
+        // "outDir": "dist", //çıktı dosyası
+        // "rootDir": "src" //çalışma dosyası
+        "declaration": true // type lar ile ilgili dosya çıkartır -> person.d.ts
+    }
+}
