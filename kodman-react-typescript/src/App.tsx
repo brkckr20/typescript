@@ -4,7 +4,8 @@ import "./App.css";
 // import Form from "./forms/Form";
 // import Test from "./formik/Test";
 // import Alistirma from "./state/Alistirma";
-import ApiSorgusu from "./useEffect-api-sorgusu";
+// import ApiSorgusu from "./useEffect-api-sorgusu";
+import { useCurrentUser } from "./customHook";
 
 // const data = [
 //   {
@@ -20,7 +21,10 @@ import ApiSorgusu from "./useEffect-api-sorgusu";
 // ]
 
 function App() {
-  return <ApiSorgusu />;
+  const { user } = useCurrentUser();
+  console.log(user);
+
+  return <div>lorem</div>;
 }
 
 export default App;
