@@ -52,3 +52,5 @@ const p3: Pick<Person3, 'isim' | 'yas'> = { // omit'in tersine sadece istediğim
     isim: "adad",
     yas: 12,
 }
+
+
