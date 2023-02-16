@@ -1,0 +1,27 @@
+interface Point{
+    x: number,
+    y: number
+}
+
+interface Vehicle {
+    currentLocation: Point;
+    travelTo(point: Point): void; //fonksiyon tanımlama
+    
+}
+
+class Taxi implements Vehicle{
+    currentLocation: Point;
+    travelTo(point: Point): void {
+        console.log(`taksi x:${point.x} konumundan y:${point.y} konumuna gidiyor.`)
+    }
+}
+/* yeni nesne türetilmesi */
+let taxi_1: Taxi = new Taxi();
+taxi_1.travelTo({ x: 1, y: 2 });
+taxi_1.currentLocation= {x:3,y:10}
+console.log(taxi_1.currentLocation.x);
+console.log(taxi_1.currentLocation.y);
+
+/* yeni nesne türetilmesi */
+let taxi_2 = new Taxi();
+taxi_2.travelTo({ x: 100, y: 200 });
