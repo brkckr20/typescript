@@ -1,0 +1,12 @@
+"use strict";
+exports.__esModule = true;
+var express = require("express");
+var addTodo_1 = require("./src/addTodo");
+var deleteTodo_1 = require("./src/deleteTodo");
+var getTodos_1 = require("./src/getTodos");
+var app = express();
+app.use(express.json());
+app.post("/", addTodo_1.addTodo);
+app.get("/", getTodos_1.getTodos);
+app["delete"]("/delete/:id", deleteTodo_1.deleteTodo);
+app.listen(4000, function () { return console.log("server is up http://localhost:4000"); });
